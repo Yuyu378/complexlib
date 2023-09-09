@@ -155,3 +155,29 @@ $$
         & \begin{Bmatrix}z\pm\sqrt{\vert z^2-1\vert}\ \left(\cos{\frac{\text{Arg}(z^2-1)}{2}}\ +\ i\sin{\frac{\text{Arg}(z^2-1)}{2}}\right) \end{Bmatrix}
 \end{align}
 $$
+
+#### Arctangent
+$$
+\begin{align}
+    \text{Let }\quad \omega &= \alpha + \beta i \\
+    \\
+    z   &= A + Bi = \tan{\omega} = \frac{\hspace{0.15em}\sin\omega}{\ \cos\omega\ } = \frac{1}{i}\frac{e^{i\omega}-e^{-i\omega}}{\ e^{i\omega}+e^{-i\omega}\ } \\
+    \\
+    iz  &= \frac{e^{i\omega}-e^{-i\omega}}{\ e^{i\omega}+e^{-i\omega}\ } = \frac{e^{i2\omega}-1}{\ e^{i2\omega}+1\ }\\
+    \\
+    e^{i2\omega}
+        &= \frac{iz+1}{\ 1-iz\ } = \frac{i-z}{\ i+z\ } \\
+    \\
+    w   &= \frac{1}{2i}\ln\frac{i-z}{\ i+z\ } \\
+    \\
+    \text{Euler's} & \text{ formula } \quad \frac{i-z}{\ i+z\ } = \zeta e^{i\vartheta} \\
+    \\
+    w   &= \frac{1}{2i}\ln{\zeta e^{i\vartheta}} \\
+        &= \frac{1}{2i}(\ln\zeta + \ln{e^{i\vartheta}}) \\
+        &= \frac{1}{2i}(\ln\zeta + i\vartheta) \\
+    \\
+    \\
+    \tan^{-1}&(z)
+        = -\frac{i}{2}\begin{Bmatrix}\ \ln{\left\vert\large\frac{i-z}{\ i+z\ }\right\vert} + i\text{Arg}\left(\large\frac{i-z}{\ i+z\ }\right)\ \end{Bmatrix}
+\end{align}
+$$
