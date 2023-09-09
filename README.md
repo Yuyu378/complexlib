@@ -50,7 +50,7 @@ $$
 \begin{align}
     e^{(A+Bi)}
         &= e^{\ A}\ e^{\ iB} \\
-        &= e^{\ A}\ (\cos{B}\ +\ i\sin{B})\qquad\qquad\qquad\qquad\qquad\qquad\qquad
+        &= e^{\ A}\ (\cos{B}\ +\ i\sin{B})
 \end{align}
 $$
 ****
@@ -61,7 +61,7 @@ $$
     \log_n{(A+Bi)}
     	&= \log_n{(r\ e^{\ i\varphi})} \\
         &= \frac{\ \ln{(r\ e^{\ i\varphi}) }\ }{ \ln{n} } \\
-        &= \frac{\ \ln{r}\ +\ \ln{e^{\ i\varphi} }\ }{ \ln{n} }\qquad\qquad\qquad\qquad\qquad \\
+        &= \frac{\ \ln{r}\ +\ \ln{e^{\ i\varphi} }\ }{ \ln{n} } \\
         &= \frac{\ \ln{r}\ +\ i\varphi\ }{ \ln{n} }
 \end{align}
 $$
@@ -72,7 +72,7 @@ $$
     \log_{(a+bi)}{(A+Bi)}
     	&= \log_{(\gamma\ e^{\ i\theta})}{(r\ e^{\ i\varphi})} \\
         &= \frac{\ \ln{(r\ e^{\ i\varphi}) }\ }{ \ln{(\gamma\ e^{\ i\theta})} } \\
-        &= \frac{\ \ln{r}\ +\ \ln{\ e^{\ i\varphi} }\ }{ \ln{\gamma}\ +\ \ln{\ e^{\ i\theta} } }\qquad\qquad\qquad\qquad\qquad \\
+        &= \frac{\ \ln{r}\ +\ \ln{\ e^{\ i\varphi} }\ }{ \ln{\gamma}\ +\ \ln{\ e^{\ i\theta} } } \\
         &= \frac{\ \ln{r}\ +\ i\varphi\ }{ \ln{\gamma}\ +\ i\theta }
 \end{align}
 $$
