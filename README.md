@@ -3,7 +3,7 @@ Complex Arithmetic Library of C
 
 ## Proof of complex arithmetic  
 ### Power
-#### case 1
+#### Case 1
 $$
 \begin{align}
     (A+Bi)^{\ n}
@@ -13,7 +13,7 @@ $$
 \end{align}
 $$  
 
-#### case 2
+#### Case 2
 $$
 \begin{align}
     A^{\ a\ +\ bi}
@@ -32,7 +32,7 @@ $$
 \end{align}
 $$
 
-#### case 3
+#### Case 3
 $$
 \begin{align}		
     (A+Bi)^{\ a\ +\ bi} 
@@ -44,7 +44,7 @@ $$
         &= r^{\ a}\ (\cos{a\varphi}\ +\ i\sin{a\varphi})\ (\cos{b}\hspace{-0.05em}\ln\hspace{-0.05em}r\ +\ i\sin{b}\hspace{-0.05em}\ln\hspace{-0.05em}r)\ e^{-b\varphi} \\
 \end{align}
 $$
-
+****
 ### Exponential
 $$
 \begin{align}
@@ -53,9 +53,9 @@ $$
         &= e^{\ A}\ (\cos{B}\ +\ i\sin{B})
 \end{align}
 $$
-
+****
 ### Logarithm
-#### case 1
+#### Case 1
 $$
 \begin{align}
     \log_n{(A+Bi)}
@@ -66,7 +66,7 @@ $$
 \end{align}
 $$
 
-#### case 2
+#### Case 2
 $$
 \begin{align}
     \log_{(a+bi)}{(A+Bi)}
@@ -76,8 +76,9 @@ $$
         &= \frac{\ \ln{r}\ +\ i\varphi\ }{ \ln{\gamma}\ +\ i\theta }
 \end{align}
 $$
-
+****
 ### Trigonometry
+#### Common Functions
 $$
 \begin{align}
     \sin{(A+Bi)}
@@ -94,5 +95,34 @@ $$
     	&= \frac{\sin{(A+Bi)}}{\cos{(A+Bi)}} \\
         &= -i\frac{\ e^{i(A+Bi)}\ -\ e^{-i(A+Bi)}\ }{\ e^{i(A+Bi)}\ +\ e^{-i(A+Bi)}\ } \\
         &= \frac{\ e^{-B}\ (\sin{A}\ -\ i\cos{A})\ +\ e^{B}\ (\sin{A}\ +\ i\cos{A})\ }{\ e^{-B}\ (\cos{A}\ +\ i\sin{A})\ +\ e^{B}\ (\cos{A}\ -\ i\sin{A})\ }
+\end{align}
+$$
+
+#### Arcsine
+$$
+\begin{align}
+    \text{Let }\quad \omega &= \alpha + \beta i\ ,\quad v = e^{i\omega} \\
+    \\
+    z   &= A + Bi = \sin{\omega} = \frac{\ v\ -\ v^{-1}\ }{2i} \\
+    \\
+    \text{Thus }\quad & v^2 - 2izv - 1 = 0 \\
+    \\
+    v   &= \frac{2iz\pm\sqrt{-4z^2 + 4}}{2} \\
+        &= iz\pm\sqrt{1 - z^2} \\
+        &= iz\pm e^{\ln{ {(1 - z^2)} ^{\frac{1}{2}}}} \\
+    \\
+    \text{Euler's} & \text{ formula } \quad 1 - z^2 = \zeta e^{i\vartheta} \\
+    \\
+    v   &= iz\pm e^{\frac{1}{2}\ln{ \zeta e^{i\vartheta} }} \\
+        &= iz\pm e^{\frac{1}{2}(\ln{\zeta} + \ln{e^{i\vartheta}})} \\
+        &= iz\pm e^{\ln{ {\zeta}^{\frac{1}{2}} }}e^{i\frac{\vartheta}{2}} \\
+        &= iz\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \\
+    \\
+    w   &= \frac{1}{i}\ln{v} \\
+        &= -i\ln{ \begin{Bmatrix} iz\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \end{Bmatrix} } \\
+    \\
+    \\
+    \text{Then, }\ \\
+    & \sin^{-1}{(A + Bi)} = -i\ln{ \begin{Bmatrix} iz\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \end{Bmatrix} }
 \end{align}
 $$
