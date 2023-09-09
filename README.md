@@ -177,7 +177,7 @@ $$
         &= \frac{1}{2i}(\ln\zeta + i\vartheta) \\
     \\
     \\
-    \tan^{-1}(z)
-        &= -\frac{i}{2}\begin{Bmatrix}\ \ln{\left\vert\large\frac{i-z}{\ i+z\ }\right\vert} + i\text{Arg}\left(\large\frac{i-z}{\ i+z\ }\right)\ \end{Bmatrix}
+    \tan^{-1}(z) = -\frac{i}{2}&\ln\frac{i-z}{\ i+z\ }
+        = -\frac{i}{2}\begin{Bmatrix}\ \ln{\left\vert\large\frac{i-z}{\ i+z\ }\right\vert} + i\text{Arg}\left(\large\frac{i-z}{\ i+z\ }\right)\ \end{Bmatrix}
 \end{align}
 $$
