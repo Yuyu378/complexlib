@@ -9,7 +9,7 @@ $$
     (A+Bi)^{\ n}
         &= (r\ e^{\ i\varphi})^{\ n} \\
         &= r^{\ n}\ e^{\ i\ n\varphi} \\
-        &= r^{\ n}\ (\cos n\varphi\ +\ i\sin n\varphi)
+        &= r^{\ n}\ (\cos n\varphi\ +\ i\sin n\varphi)\qquad\qquad\qquad\qquad\qquad\qquad\qquad
 \end{align}
 $$  
 
@@ -41,7 +41,7 @@ $$
         &= r^{\ a}\ e^{\ ia\varphi}\ r^{\ bi}\ e^{-b\varphi} \\
         &= r^{\ a}\ (\cos{a\varphi}\ +\ i\sin{a\varphi})\ e^{\ \ln{r^{\ bi}} }\ e^{-b\varphi} \\
         &= r^{\ a}\ (\cos{a\varphi}\ +\ i\sin{a\varphi})\ e^{\ i\ b\hspace{-0.05em}\ln\hspace{-0.05em}r}\ e^{-b\varphi} \\
-        &= r^{\ a}\ (\cos{a\varphi}\ +\ i\sin{a\varphi})\ (\cos{b}\hspace{-0.05em}\ln\hspace{-0.05em}r\ +\ i\sin{b}\hspace{-0.05em}\ln\hspace{-0.05em}r)\ e^{-b\varphi} \\
+        &= r^{\ a}\ (\cos{a\varphi}\ +\ i\sin{a\varphi})\ (\cos{b}\hspace{-0.05em}\ln\hspace{-0.05em}r\ +\ i\sin{b}\hspace{-0.05em}\ln\hspace{-0.05em}r)\ e^{-b\varphi}\qquad\qquad
 \end{align}
 $$
 ****
@@ -50,7 +50,7 @@ $$
 \begin{align}
     e^{(A+Bi)}
         &= e^{\ A}\ e^{\ iB} \\
-        &= e^{\ A}\ (\cos{B}\ +\ i\sin{B})
+        &= e^{\ A}\ (\cos{B}\ +\ i\sin{B})\qquad\qquad\qquad\qquad\qquad\qquad\qquad
 \end{align}
 $$
 ****
@@ -61,7 +61,7 @@ $$
     \log_n{(A+Bi)}
     	&= \log_n{(r\ e^{\ i\varphi})} \\
         &= \frac{\ \ln{(r\ e^{\ i\varphi}) }\ }{ \ln{n} } \\
-        &= \frac{\ \ln{r}\ +\ \ln{e^{\ i\varphi} }\ }{ \ln{n} } \\
+        &= \frac{\ \ln{r}\ +\ \ln{e^{\ i\varphi} }\ }{ \ln{n} }\qquad\qquad\qquad\qquad\qquad \\
         &= \frac{\ \ln{r}\ +\ i\varphi\ }{ \ln{n} }
 \end{align}
 $$
@@ -72,7 +72,7 @@ $$
     \log_{(a+bi)}{(A+Bi)}
     	&= \log_{(\gamma\ e^{\ i\theta})}{(r\ e^{\ i\varphi})} \\
         &= \frac{\ \ln{(r\ e^{\ i\varphi}) }\ }{ \ln{(\gamma\ e^{\ i\theta})} } \\
-        &= \frac{\ \ln{r}\ +\ \ln{\ e^{\ i\varphi} }\ }{ \ln{\gamma}\ +\ \ln{\ e^{\ i\theta} } } \\
+        &= \frac{\ \ln{r}\ +\ \ln{\ e^{\ i\varphi} }\ }{ \ln{\gamma}\ +\ \ln{\ e^{\ i\theta} } }\qquad\qquad\qquad\qquad\qquad \\
         &= \frac{\ \ln{r}\ +\ i\varphi\ }{ \ln{\gamma}\ +\ i\theta }
 \end{align}
 $$
@@ -122,7 +122,7 @@ $$
         &= -i\ln{ \begin{Bmatrix} iz\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \end{Bmatrix} } \\
     \\
     \\
-    \text{Then, }\ \\
-    & \sin^{-1}{(A + Bi)} = -i\ln{ \begin{Bmatrix} iz\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \end{Bmatrix} }
+    \sin^{-1}(z) = -i\ln
+        & \begin{Bmatrix}iz\pm\sqrt{\vert 1-z^2\vert}\ \left(\cos{\frac{\text{Arg}(1-z^2)}{2}}\ +\ i\sin{\frac{\text{Arg}(1-z^2)}{2}}\right) \end{Bmatrix}
 \end{align}
 $$
