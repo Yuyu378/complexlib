@@ -126,3 +126,32 @@ $$
         & \begin{Bmatrix}iz\pm\sqrt{\vert 1-z^2\vert}\ \left(\cos{\frac{\text{Arg}(1-z^2)}{2}}\ +\ i\sin{\frac{\text{Arg}(1-z^2)}{2}}\right) \end{Bmatrix}
 \end{align}
 $$
+
+#### Arccosine
+$$
+\begin{align}
+    \text{Let }\quad \omega &= \alpha + \beta i\ ,\quad v = e^{i\omega} \\
+    \\
+    z   &= A + Bi = \sin{\omega} = \frac{\ v\ +\ v^{-1}\ }{2} \\
+    \\
+    \text{Thus }\quad & v^2 - 2zv + 1 = 0 \\
+    \\
+    v   &= \frac{2z\pm\sqrt{4z^2 - 4}}{2} \\
+        &= z\pm\sqrt{z^2 - 1} \\
+        &= z\pm e^{\ln{ {(z^2 - 1)} ^{\frac{1}{2}}}} \\
+    \\
+    \text{Euler's} & \text{ formula } \quad z^2 - 1 = \zeta e^{i\vartheta} \\
+    \\
+    v   &= z\pm e^{\frac{1}{2}\ln{ \zeta e^{i\vartheta} }} \\
+        &= z\pm e^{\frac{1}{2}(\ln{\zeta} + \ln{e^{i\vartheta}})} \\
+        &= z\pm e^{\ln{ {\zeta}^{\frac{1}{2}} }}e^{i\frac{\vartheta}{2}} \\
+        &= z\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \\
+    \\
+    w   &= \frac{1}{i}\ln{v} \\
+        &= -i\ln{ \begin{Bmatrix} z\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \end{Bmatrix} } \\
+    \\
+    \\
+    \cos^{-1}(z) = -i\ln
+        & \begin{Bmatrix}z\pm\sqrt{\vert z^2-1\vert}\ \left(\cos{\frac{\text{Arg}(z^2-1)}{2}}\ +\ i\sin{\frac{\text{Arg}(z^2-1)}{2}}\right) \end{Bmatrix}
+\end{align}
+$$
