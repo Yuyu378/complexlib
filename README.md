@@ -163,7 +163,7 @@ $$
     \\
     z   &= A + Bi = \tan{\omega} = \frac{\hspace{0.15em}\sin\omega}{\ \cos\omega\ } = \frac{1}{i}\frac{e^{i\omega}-e^{-i\omega}}{\ e^{i\omega}+e^{-i\omega}\ } \\
     \\
-    iz  &= \frac{e^{i\omega}-e^{-i\omega}}{\ e^{i\omega}+e^{-i\omega}\ } = \frac{e^{i2\omega}-1}{\ e^{i2\omega}+1\ }\\
+    iz  &= \frac{e^{i\omega}-e^{-i\omega}}{\ e^{i\omega}+e^{-i\omega}\ } = \frac{e^{i2\omega}-1}{\ e^{i2\omega}+1\ } \\
     \\
     e^{i2\omega}
         &= \frac{iz+1}{\ 1-iz\ } = \frac{i-z}{\ i+z\ } \\
@@ -205,17 +205,82 @@ $$
 #### Arcsinh
 $$
 \begin{align}
+    \text{Let }\quad \omega &= \alpha + \beta i ,\quad v = e^{\omega} \\
+    \\
+    z   &= A + Bi = \sinh{\omega} = \frac{v-v^{-1}}{2} \\
+    \\
+    \text{Thus }\quad & v^2 - 2zv - 1 = 0 \\
+    \\
+    v   &= \frac{2z\pm\sqrt{4z^2+4}}{2} \\
+        &= z\pm\sqrt{z^2+1} \\
+        &= z\pm e^{\ln{ {(z^2+1)} ^{\frac{1}{2}}}} \\
+    \\
+    \text{Euler's} & \text{ formula } \quad z^2 + 1 = \zeta e^{i\vartheta} \\
+    \\
+    v   &= z\pm e^{\frac{1}{2}\ln{ \zeta e^{i\vartheta} }} \\
+        &= z\pm e^{\frac{1}{2}(\ln{\zeta} + \ln{e^{i\vartheta}})} \\
+        &= z\pm e^{\ln{ {\zeta}^{\frac{1}{2}} }}e^{i\frac{\vartheta}{2}} \\
+        &= z\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \\
+    \\
+    w   &= \ln{v} \\
+        &= \ln{ \begin{Bmatrix} z\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \end{Bmatrix} } \\
+    \\
+    \\
+    \sinh^{-1}(z) = \ln
+        & \begin{Bmatrix}z\pm\sqrt{\vert z^2+1\vert}\ \left(\cos{\frac{\text{Arg}(z^2+1)}{2}}\ +\ i\sin{\frac{\text{Arg}(z^2+1)}{2}}\right) \end{Bmatrix}
 \end{align}
 $$
 
 #### Arccosh
 $$
 \begin{align}
+    \text{Let }\quad \omega &= \alpha + \beta i ,\quad v = e^{\omega} \\
+    \\
+    z   &= A + Bi = \sinh{\omega} = \frac{v+v^{-1}}{2} \\
+    \\
+    \text{Thus }\quad & v^2 - 2zv + 1 = 0 \\
+    \\
+    v   &= \frac{2z\pm\sqrt{4z^2-4}}{2} \\
+        &= z\pm\sqrt{z^2-1} \\
+        &= z\pm e^{\ln{ {(z^2-1)} ^{\frac{1}{2}}}} \\
+    \\
+    \text{Euler's} & \text{ formula } \quad z^2 - 1 = \zeta e^{i\vartheta} \\
+    \\
+    v   &= z\pm e^{\frac{1}{2}\ln{ \zeta e^{i\vartheta} }} \\
+        &= z\pm e^{\frac{1}{2}(\ln{\zeta} + \ln{e^{i\vartheta}})} \\
+        &= z\pm e^{\ln{ {\zeta}^{\frac{1}{2}} }}e^{i\frac{\vartheta}{2}} \\
+        &= z\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \\
+    \\
+    w   &= \ln{v} \\
+        &= \ln{ \begin{Bmatrix} z\pm \sqrt{\zeta}\ (\cos{\frac{\vartheta}{2}}\ +\ i\sin{\frac{\vartheta}{2}}) \end{Bmatrix} } \\
+    \\
+    \\
+    \cosh^{-1}(z) = \ln
+        & \begin{Bmatrix}z\pm\sqrt{\vert z^2-1\vert}\ \left(\cos{\frac{\text{Arg}(z^2-1)}{2}}\ +\ i\sin{\frac{\text{Arg}(z^2-1)}{2}}\right) \end{Bmatrix}
 \end{align}
 $$
 
 #### Arctanh
 $$
 \begin{align}
+    \text{Let }\quad \omega &= \alpha + \beta i \\
+    \\
+    z   &= A + Bi = \tan{\omega} = \frac{\hspace{0.15em}\sin\omega}{\ \cos\omega\ } \\
+        &= \frac{e^\omega-e^{-\omega}}{\ e^\omega+e^{-\omega}\ } = \frac{e^{2\omega}-1}{\ e^{2\omega}+1\ } \\
+    \\
+    e^{2\omega}
+        &= \frac{z+1}{\ 1-z\ } \\
+    \\
+    w   &= \frac{1}{2}\ln\frac{1+z}{\ 1-z\ } \\
+    \\
+    \text{Euler's} & \text{ formula } \quad \frac{1+z}{\ 1-z\ } = \zeta e^{i\vartheta} \\
+    \\
+    w   &= \frac{1}{2}\ln{\zeta e^{i\vartheta}} \\
+        &= \frac{1}{2}(\ln\zeta + \ln{e^{i\vartheta}}) \\
+        &= \frac{1}{2}(\ln\zeta + i\vartheta) \\
+    \\
+    \\
+    \tanh^{-1}(z) = \frac{1}{2}&\ln\frac{1+z}{\ 1-z\ }
+        = \frac{1}{2}\begin{Bmatrix}\ \ln{\left\vert\large\frac{1+z}{\ 1-z\ }\right\vert} + i\text{Arg}\left(\large\frac{1+z}{\ 1-z\ }\right)\ \end{Bmatrix}
 \end{align}
 $$
