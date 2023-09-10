@@ -181,3 +181,41 @@ $$
         = -\frac{i}{2}\begin{Bmatrix}\ \ln{\left\vert\large\frac{i-z}{\ i+z\ }\right\vert} + i\text{Arg}\left(\large\frac{i-z}{\ i+z\ }\right)\ \end{Bmatrix}
 \end{align}
 $$
+****
+### Hyperbola
+#### Common Functions
+$$
+\begin{align}
+    \sinh{(A+Bi)}
+    	&= \frac{\ e^{A+Bi}\ -\ e^{-(A+Bi)}\ }{2} \\
+        &= \frac{\ e^{A}\ e^{iB}\ -\ e^{-A}\ e^{-iB}\ }{2} \\
+        &= \frac{\ e^{A}\ (\cos{B}\ +\ i\sin{B})\ -\ e^{-A}\ (\cos{B}\ -\ i\sin{B})\ }{2} \\
+    \\
+    \cosh{(A+Bi)}
+    	&= \frac{\ e^{A+Bi}\ +\ e^{-(A+Bi)}\ }{2} \\
+        &= \frac{\ e^{A}\ (\cos{B}\ +\ i\sin{B})\ +\ e^{-A}\ (\cos{B}\ -\ i\sin{B})\ }{2} \\
+    \\
+    \tanh{(A+Bi)}
+    	&= \frac{\sinh{(A+Bi)}}{\cosh{(A+Bi)}} \\
+        &= \frac{\ e^{A+Bi}\ -\ e^{-(A+Bi)}\ }{\ e^{A+Bi}\ +\ e^{-(A+Bi)}\ } \\
+        &= \frac{\ e^{A}\ (\cos{B}\ +\ i\sin{B})\ -\ e^{-A}\ (\cos{B}\ -\ i\sin{B})\ }{\ e^{A}\ (\cos{B}\ +\ i\sin{B})\ +\ e^{-A}\ (\cos{B}\ -\ i\sin{B})\ }
+\end{align}
+$$
+
+#### Arcsinh
+$$
+\begin{align}
+\end{align}
+$$
+
+#### Arccosh
+$$
+\begin{align}
+\end{align}
+$$
+
+#### Arctanh
+$$
+\begin{align}
+\end{align}
+$$
