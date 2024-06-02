@@ -1,6 +1,9 @@
 # complexlib
 Complex Arithmetic Library of C
 
+## Reference
+[The complex inverse trigonometric and hyperbolic functions.pdf](https://github.com/Yuyu378/complexlib/blob/main/The%20complex%20inverse%20trigonometric%20and%20hyperbolic%20functions.pdf) [^1]
+
 ## Proof of complex arithmetic  
 ### Power
 #### Case 1
@@ -284,3 +287,5 @@ $$
         = \frac{1}{2}\begin{Bmatrix}\ \ln{\left\vert\large\frac{1+z}{\ 1-z\ }\right\vert} + i\text{Arg}\left(\large\frac{1+z}{\ 1-z\ }\right)\ \end{Bmatrix}
 \end{align}
 $$
+
+[^1]: Haber, H.E. (2010) The complex inverse trigonometric and hyperbolic functions, Physics 116A Home Page---Winter 2010. Available at: https://scipp.ucsc.edu/~haber/archives/physics116A10/arc_10.pdf (Accessed: 2023). 
